@@ -8,7 +8,7 @@ cart={}
 
 def Window2():
     def addtocart():
-        item = cmbvar.get()
+        item = menu_item.get()
         quan = int(quantity.get())
         print(item)
         print(quan)
@@ -60,7 +60,7 @@ def Window2():
 
     Label(Dessert, text="Desserts").pack()
     desserts = {'Red Velvet Cake': 25, 'Brownie with Icecream': 30, 'Chocolate Mousse': 20}
-    
+   
 
 # myimg = Image.open('project.png')
 # myimg = myimg.resize((100,100))
