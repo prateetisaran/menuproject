@@ -14,7 +14,7 @@ def Window2():
         quan = int(quantity.get())
         for food,number in cart.items():
             number = number+quan
-
+        print (cart)
     popup = Toplevel(screen)
     popup.title("Window 2")
     popup.configure(background='red')
@@ -57,7 +57,7 @@ def Window2():
     Label(MainCourse, text="Main Course").pack()
 
     mcourse = {'Pesto Penne': 45, 'Margherita Pizza': 55, 'Mushroom Risotto': 50}
-    menu_item = StringVar(Label)
+    menu_item = StringVar(MainCourse)
     menu_item.set([key for key in mcourse][0])
     Combo1 = Combobox(MainCourse, height=10, width=25, values=[key for key in mcourse],
                       textvariable=menu_item)  # Height refers to number of values it will list without scroll
